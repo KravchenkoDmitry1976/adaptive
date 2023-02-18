@@ -1,0 +1,122 @@
+@media screen and (min-width: 480px) {
+    /* =============== COMPONENTS =============== */
+    .container {
+      max-width: 425px;
+    }
+    /* =============== /COMPONENTS =============== */
+  
+    /* =============== MOBILE MENU =============== */
+    .mobile-menu-soc-list {
+      justify-content: start;
+      gap: 56px;
+    }
+  
+    .mobile-menu-tel-link {
+      font-size: 36px;
+    }
+    /* =============== /MOBILE MENU =============== */
+  
+    /* =============== CUSTOMERS =============== */
+    .customers-list {
+      width: 396px;
+    }
+    /* =============== /CUSTOMERS =============== */
+  
+    /* =============== FOOTER =============== */
+    .footer-form-input {
+      width: 396px;
+    }
+    /* =============== /FOOTER =============== */
+  }
+  
+  @media screen and (min-width: 425px) {
+    .hero {
+      background-image: linear-gradient(var(--background-color-hero), var(--background-color-hero)),
+        url(../images/hero-bg-tab.jpg);
+    }
+  
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      .hero {
+        background-image: linear-gradient(var(--background-color-hero), var(--background-color-hero)),
+          url(../images/hero-bg-tab-2x.jpg);
+      }
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .menu {
+      display: none;
+    }
+  
+    .contacts {
+      display: none;
+    }
+  
+    .feature-item {
+      max-width: 396px;
+    }
+  
+    .feature-item:not(:last-child) {
+      margin-bottom: 72px;
+    }
+  
+    .feature-item-title {
+      text-align: center;
+    }
+  
+    .team-mmbr {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    .team-mmbr:not(:last-child) {
+      margin-bottom: 72px;
+    }
+  
+    .customers-list {
+      justify-content: center;
+    }
+  
+    .footer-info {
+      margin: 0 auto 72px auto;
+    }
+  
+    .logo-ftr {
+      text-align: center;
+    }
+  
+    .footer-soc-list {
+      margin-bottom: 72px;
+    }
+  
+    .footer-soc-title {
+      text-align: center;
+    }
+  
+    .footer-form-label {
+      text-align: center;
+    }
+  
+    .footer-form-input {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    .footer-form-btn {
+      margin: 16px auto 0 auto;
+    }
+  
+    .modal {
+      width: 100%;
+      max-width: 392px;
+    }
+  
+    .filter {
+      row-gap: 16px;
+      width: 263px;
+    }
+  
+    .project-item:not(:last-child) {
+      margin-bottom: 48px;
+    }
+  }

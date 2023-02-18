@@ -1,0 +1,220 @@
+@media screen and (min-width: 768px) {
+  /* =============== COMPONENTS =============== */
+  .container {
+    max-width: 766px;
+  }
+  /* =============== /COMPONENTS =============== */
+
+  /* =============== HEADER =============== */
+  .mobile-menu-btn {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+
+  .navigation {
+    display: flex;
+  }
+
+  .logo-hdr {
+    margin-right: 120px;
+    line-height: 1.17;
+  }
+
+  .menu {
+    display: flex;
+    gap: 40px;
+    color: var(--dark-color);
+    font-weight: 500;
+    line-height: 1.5;
+  }
+
+  .menu-item-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 0 22px;
+  }
+  .current {
+    position: relative;
+  }
+
+  .current::after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--pressed-state-color);
+  }
+
+  .contacts {
+    display: flex;
+  }
+  /* =============== /HEADER =============== */
+
+  /* =============== HERO =============== */
+  .hero {
+    background-image: linear-gradient(var(--background-color-hero), var(--background-color-hero)),
+      url(../images/hero-bg.jpg);
+    padding-bottom: 108px;
+  }
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(var(--background-color-hero), var(--background-color-hero)),
+        url(../images/hero-bg-2x.jpg);
+    }
+  }
+
+  .hero-title {
+    font-size: 56px;
+    line-height: 1.07;
+    max-width: 494px;
+    margin-bottom: 56px;
+  }
+  /* =============== /HERO =============== */
+
+  /* =============== FEATURES =============== */
+  .features-list {
+    display: flex;
+  }
+
+  .feature-item {
+    width: 356px;
+  }
+  /* =============== /FEATURES =============== */
+
+  /* =============== TEAM =============== */
+  .team-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 64px;
+  }
+  /* =============== /TEAM =============== */
+
+  /* =============== CUSTOMERS =============== */
+  .customers-list {
+    column-gap: 24px;
+    width: 552px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .customer-item {
+    width: 168px;
+    height: 88px;
+  }
+
+  .customer-icon {
+    width: 104px;
+  }
+  /* =============== /CUSTOMERS =============== */
+
+  /* =============== FOOTER =============== */
+  .footer-content {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+  }
+
+  .footer-info {
+    margin-right: 24px;
+  }
+
+  .footer-form {
+    width: 453px;
+    display: flex;
+  }
+
+  .footer-form-input {
+    width: 264px;
+    margin-right: 24px;
+  }
+  /* =============== /FOOTER =============== */
+
+  /* =============== MODAL =============== */
+  .modal {
+    width: 408px;
+  }
+  /* =============== /MODAL =============== */
+
+  /* =============== PROJECTS =============== */
+  .portfolio-section {
+    padding-top: 64px;
+    padding-bottom: 96px;
+  }
+
+  .filter {
+    justify-content: center;
+    margin-bottom: 64px;
+  }
+
+  .filter-btn {
+    padding: 12px 24px;
+  }
+
+  .project-list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 72px;
+    column-gap: 24px;
+  }
+
+  .project-item {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+  /* =============== /PROJECTS =============== */
+}
+
+@media screen and (max-width: 1199px) {
+  .contacts {
+    padding-top: 24px;
+    padding-bottom: 10px;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .contact-item {
+    font-size: 12px;
+    line-height: 1.33;
+  }
+
+  .features-section {
+    padding-bottom: 96px;
+  }
+
+  .features-list {
+    flex-wrap: wrap;
+    row-gap: 72px;
+    column-gap: 24px;
+  }
+
+  .feature-item-icon-bg {
+    display: none;
+  }
+
+  .feature-item-icon {
+    display: none;
+  }
+
+  .service-section {
+    display: none;
+  }
+
+  .footer-content {
+    row-gap: 72px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-content {
+    width: 552px;
+  }
+}
